@@ -30,9 +30,7 @@ module.exports = function (h, inputClass) {
       attrs: { name: _this._getColumnName(column),
         type: 'text',
         placeholder: _this.display('filterBy', { column: _this.getHeading(column) })
-      },
-      domProps: {
-        'value': _this.query[column]
+        //  value={this.query[column]}
       }
     });
   };
